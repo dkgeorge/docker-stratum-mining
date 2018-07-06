@@ -17,7 +17,7 @@ RUN cd externals/stratum && \
   sed -i -e "s/^use_setuptools()/# use_setuptools()/" setup.py && \
   python setup.py install
 
-RUN pip install --no-cache-dir litecoin_scrypt
+RUN pip install --no-cache-dir ltc_scrypt
 
 RUN apk del .build-deps
 
