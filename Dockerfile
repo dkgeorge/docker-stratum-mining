@@ -18,6 +18,7 @@ RUN cd externals/stratum && \
   python setup.py install
 
 RUN pip install --no-cache-dir ltc_scrypt
+RUN pip install --no-cache-dir pycrypto
 
 RUN apk del .build-deps
 
